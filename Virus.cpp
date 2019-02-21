@@ -16,14 +16,14 @@
 * It will start every time when windows is  *			   
 * running. If you want to turn this program *			   
 * off, you have to find it in task menager  *			   
-********************************************///           	 
-					     //			  
-#define _WIN32_WINNT 0x0500		     //			 
-#include "pch.h"			     //			
-#include <iostream>			     //		       
-#include <windows.h>			     //			
-#include <time.h>			     //			 
-using namespace std;			     //			
+********************************************/           	 
+					     			  
+#define _WIN32_WINNT 0x0500		     			 
+#include "pch.h"			     			
+#include <iostream>			     		       
+#include <windows.h>			     			
+#include <time.h>			     		 
+using namespace std;			     			
 int main() {
 	srand(time(NULL));
 	system("color C");								//Red font looks much better
