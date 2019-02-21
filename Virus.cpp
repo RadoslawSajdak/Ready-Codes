@@ -1,5 +1,5 @@
 ﻿/********************************************		            
-* If you're here, you should know that      *			      
+* If you're here, you should know that      *		Jan	      
 * it's my author's program. I wrote it      *			      
 * because I wanted to punish my roommate    *			  
 * for touching my computer when I was away  *			 
