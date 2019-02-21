@@ -4,10 +4,10 @@
 * because I wanted to punish my roommate    *			  
 * for touching my computer when I was away  *			 
 * from keyboard. I don't want to steal      *		        
-* anything. This program only make an       *		        
-* annoying jokes. You can delete this       *		      	
-* file if you want, and that's all.         *			
-* Repaired!                                 *			
+* anything. This program makes annoying     *
+* jokes only You can delete this file if    *
+*  you want, and that's all. Repaired!      *	  		
+*                                           *			
 * 					    * 		 
 *					    *		      
 * If you want to make a joke to your friend *			
@@ -15,7 +15,7 @@
 * past it to Win+R ->"shell:common startup" *			     
 * It will start every time when windows is  *			   
 * running. If you want to turn this program *			   
-* off, you have to find it in task menager  *			   
+* off, hold CTRL + L for about 15s.         *			   
 ********************************************///           	 
 					     //			  
 #define _WIN32_WINNT 0x0500		     //			 
@@ -32,9 +32,9 @@ int main() {
 	HWND hWnd = GetConsoleWindow();							//Makes my program invisible!
 	ShowWindow( hWnd, SW_HIDE );
 
-	unsigned short dontDoThisAgain = 1;						//Repeat jokes? No.
+	unsigned short dontDoThisAgain = 1;						//Repeat the jokes? No.
 	unsigned short whichOne = 0;
-	unsigned short delayTime = 1200000;						//Time between jokes in ms(default 20min)
+	unsigned short delayTime = 5000;						//Time between jokes in ms
 	while(GetAsyncKeyState(VK_CONTROL)>=0 || GetAsyncKeyState(0x59)>=0)
 	{
 		
@@ -45,7 +45,7 @@ int main() {
 			if (whichOne == dontDoThisAgain) whichOne = 0;	//As I said, don't repeat jokes...
 			Sleep(delayTime);
 			break;
-		case 1:												//just some right button clicks
+		case 1:												//just some right mouse button clicks
 			for (int i = 0; i < 7; i++) {
 				mouse_event(MOUSEEVENTF_RIGHTDOWN, 0, 0, 0, 0);
 				Sleep(300);
@@ -56,7 +56,7 @@ int main() {
 			whichOne = 0;
 			Sleep(delayTime);
 			break;
-		case 2:												//just some left button clicks
+		case 2:												//just some left mouse button clicks
 			for (int i = 0; i < 7; i++) {
 				mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
 				Sleep(300);
@@ -67,7 +67,7 @@ int main() {
 			dontDoThisAgain = 2;
 			whichOne = 0;
 			break;
-		case 3:												//don't waste your time... Learn sth new
+		case 3:												//don't waste your time... learn sth new
 		{
 			ShellExecute(0, 0, L"https://en.wikipedia.org/wiki/Special:Random", 0, 0, SW_SHOW);
 			Sleep(delayTime);
@@ -91,7 +91,7 @@ int main() {
 			whichOne = 0;
 			break;
 		}
-		case 6:												//Darkness... My old friend
+		case 6:												//Hello darkness... My old friend
 		{
 			ShellExecute(0, 0, L"https://www.youtube.com/watch?v=4zLfCnGVeL4", 0, 0, SW_SHOW);
 			Sleep(delayTime);
@@ -99,7 +99,8 @@ int main() {
 			whichOne = 0;
 			break;
 		}
-		case 7:												//Natural doctor, you have to try Vitamin C
+		case 7:												//Alternative medicine is a thing, 
+				                                                                                //you should try vitamin C treatment
 		{
 			ShellExecute(0, 0, L"http://jerzyzieba.com/", 0, 0, SW_SHOW);
 			Sleep(delayTime);
@@ -107,7 +108,7 @@ int main() {
 			whichOne = 0;
 			break;
 		}
-		case 8:												//The Earth is flat... Like your sister :O
+		case 8:												//The Earth is flat... Like your sister's chest :O
 		{
 			ShellExecute(0, 0, L"http://forumplaskaziemia.pl/forumdisplay.php?fid=11", 0, 0, SW_SHOW);
 			Sleep(delayTime);
@@ -116,7 +117,7 @@ int main() {
 			break;
 		}
 		case 9:												//something squeals...
-			Beep(16000, 3000);
+			Beep(16000, 5000);
 			dontDoThisAgain = 9;
 			whichOne = 0;
 			break;
@@ -138,19 +139,19 @@ int main() {
 			dontDoThisAgain = 12;
 			whichOne = 0;
 			break;
-		case 13:											//I'm tired, I want to sleep
+		case 13:											//I'm tired, I just want to sleep
 			system("shutdown -s -t 300");
 			Sleep(delayTime);
 			dontDoThisAgain = 13;
 			whichOne = 0;
 			break;
-		case 14:											//I don't believe you. Log in again
+		case 14:											//I don't trust you. Log in again
 			system("rundll32.exe user32.dll, LockWorkStation");
 			Sleep(delayTime);
 			dontDoThisAgain = 14;
 			whichOne = 0;
 			break;
-		case 15:											//leave internet, and meet with friends
+		case 15:											//go offline and just hang out with your friends
 			for (int i = 0; i < 15; i++) {
 				system("netsh wlan disconnect");
 				Sleep(1000);
@@ -179,7 +180,7 @@ int main() {
 			dontDoThisAgain = 18;
 			whichOne = 0;
 			break;
-		case 19:											//"I think sth is wrong" - notepad said...
+		case 19:											//"I think something is wrong" - notepad said...
 			system("start notepad.exe");
 			Sleep(600);
 			{
@@ -340,7 +341,7 @@ int main() {
 			dontDoThisAgain = 23;
 			whichOne = 0;
 			break;
-		case 24:											//When pointer will get closer to the center of the screen, program change his position to "random"
+		case 24:											//When pointer gets closer to the center of the screen, program changes its position to "random"
 			{
 			srand(time(NULL));                              //always different numbers!
 			POINT coordinates;                              //struct with X Y
