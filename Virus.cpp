@@ -1,5 +1,5 @@
 ﻿/********************************************		            
-* If you're here, you should know that      *			      
+* If you're here, you should know that      *		Jan	      
 * I'm the author of this code. I wrote it   *			      
 * because I wanted to punish my roommate    *			  
 * for touching my computer when I was away  *			 
