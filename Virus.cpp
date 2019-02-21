@@ -1,6 +1,6 @@
 ﻿/********************************************		            
 * If you're here, you should know that      *			      
-* it's my author's program. I wrote it      *			      
+* I'm the author of this code. I wrote it   *			      
 * because I wanted to punish my roommate    *			  
 * for touching my computer when I was away  *			 
 * from keyboard. I don't want to steal      *		        
