@@ -116,7 +116,7 @@ int main() {
 			break;
 		}
 		case 9:												//something squeals...
-			Beep(16000, 5000);
+			Beep(16000, 3000);
 			dontDoThisAgain = 9;
 			whichOne = 0;
 			break;
