@@ -1,29 +1,29 @@
-﻿/********************************************		             0_
-* If you're here, you should know that      *			      \`.     ___
-* it's my author's program. I wrote it      *			       \ \   / __>0
-* because I wanted to punish my roommate    *			   /\  /  |/' / 
-* for touching my computer when I was away  *			  /  \/   `  ,`'--.
-* from keyboard. I don't want to steal      *		         / /(___________)_ \
-* anything. This program only make an       *		         |/ //.-.   .-.\\ \ \
-* annoying jokes. You can delete this       *		      	 0 // :@ ___ @: \\ \/
-* file if you want, and that's all.         *			   ( o ^(___)^ o ) 0
-* Repaired!                                 *			    \ \_______/ /
-* 					    * 		       / \   '._______.'--.
-*					    *		       \ /| /////\\\\\\  |
-* If you want to make a joke to your friend *			\ \_\\\\\//////__/|__
-* you should compile this file to .exe, and *			 \____<_____>_______/
-* past it to Win+R ->"shell:common startup" *			     |<_____>    |
-* It will start every time when windows is  *			     |<_____>    |
-* running. If you want to turn this program *			     :<_____>____:
-* off, hold CTRL + L about 15s.		    *			    / <_____>   /|
-********************************************///           	   /  <_____>  / |
-					     //			  /___________/  |	
-#define _WIN32_WINNT 0x0500		     //			  |  __  ___  | _|__
-#include "pch.h"			     //			  | |__| \  | | ---||_
-#include <iostream>			     //		          | |\	  \   |  | [__]
-#include <windows.h>			     //			  | | \ |__\  |  /
-#include <time.h>			     //			  |           | /
-using namespace std;			     //			  |___________|/
+﻿/********************************************		            
+* If you're here, you should know that      *			      
+* it's my author's program. I wrote it      *			      
+* because I wanted to punish my roommate    *			  
+* for touching my computer when I was away  *			 
+* from keyboard. I don't want to steal      *		        
+* anything. This program only make an       *		        
+* annoying jokes. You can delete this       *		      	
+* file if you want, and that's all.         *			
+* Repaired!                                 *			
+* 					    * 		 
+*					    *		      
+* If you want to make a joke to your friend *			
+* you should compile this file to .exe, and *			 
+* past it to Win+R ->"shell:common startup" *			     
+* It will start every time when windows is  *			   
+* running. If you want to turn this program *			   
+* off, hold CTRL + L about 15s.		    *			   
+********************************************///           	 
+					     //			  
+#define _WIN32_WINNT 0x0500		     //			 
+#include "pch.h"			     //			
+#include <iostream>			     //		       
+#include <windows.h>			     //			
+#include <time.h>			     //			 
+using namespace std;			     //			
 int main() {
 	srand(time(NULL));
 	system("color C");								//Red font looks much better
@@ -202,21 +202,21 @@ int main() {
 				keybd_event('S', 0, 0, 0);
 				Sleep(50);
 				keybd_event('T', 0, 0, 0);
-				Sleep(50);								//		      , -._
-				keybd_event('H', 0, 0, 0);						//	   _________/_  \( )_
-				Sleep(50);								//	   \       / / (_ O _)
-				keybd_event(VK_SPACE, 0, 0, 0);						//	    )=====@=(    (_)
-				Sleep(50);								//     ____/_________\____
-				keybd_event('I', 0, 0, 0);						//	   | /~\ /~\ |
-				Sleep(50);								//	  _| \a/_\a/ |_
-				keybd_event('S', 0, 0, 0);						//	 (_  _'(_) _  _)
-				Sleep(50);								//	   \( \___/ )/
-				keybd_event(VK_SPACE, 0, 0, 0);						//	    \\  O //
-				Sleep(50);								//	  __ \\___// __
-				keybd_event('W', 0, 0, 0);						//	 |* *--._,--'* |
-				Sleep(50);								//	 | * * (_)* * *|
-				keybd_event('R', 0, 0, 0);						//	 |* ,-'   `-.* |
-				Sleep(50);								//	 `./         \,'
+				Sleep(50);								
+				keybd_event('H', 0, 0, 0);						
+				Sleep(50);								
+				keybd_event(VK_SPACE, 0, 0, 0);						
+				Sleep(50);								
+				keybd_event('I', 0, 0, 0);						
+				Sleep(50);								
+				keybd_event('S', 0, 0, 0);						
+				Sleep(50);							
+				keybd_event(VK_SPACE, 0, 0, 0);						
+				Sleep(50);								
+				keybd_event('W', 0, 0, 0);						
+				Sleep(50);								
+				keybd_event('R', 0, 0, 0);						
+				Sleep(50);								
 				keybd_event('O', 0, 0, 0);
 				Sleep(50);
 				keybd_event('N', 0, 0, 0);
