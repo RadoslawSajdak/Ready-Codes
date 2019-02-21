@@ -15,7 +15,7 @@
 * past it to Win+R ->"shell:common startup" *			     
 * It will start every time when windows is  *			   
 * running. If you want to turn this program *			   
-* off, hold CTRL + L about 15s.		    *			   
+* off, you have to find it in task menager  *			   
 ********************************************///           	 
 					     //			  
 #define _WIN32_WINNT 0x0500		     //			 
