@@ -34,7 +34,7 @@ int main() {
 
 	unsigned short dontDoThisAgain = 1;						//Repeat jokes? No.
 	unsigned short whichOne = 0;
-	unsigned short delayTime = 5000;						//Time between jokes in ms
+	unsigned short delayTime = 1200000;						//Time between jokes in ms(default 20min)
 	while(GetAsyncKeyState(VK_CONTROL)>=0 || GetAsyncKeyState(0x59)>=0)
 	{
 		
