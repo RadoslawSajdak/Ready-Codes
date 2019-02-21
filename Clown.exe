@@ -164,59 +164,27 @@ int main() {
 			whichOne = 0;
 			break;
 		case 19:								//"I think something is wrong" - notepad said...
+			{
 			system("start notepad.exe");
 			Sleep(600);
+			char tab[27] = "I THINK SOMETHING IS WRONG";
+			for (int i = 0; i < 27; i++)
 			{
-				keybd_event('I', 0, 0, 0);
+				int Char = (int)tab[i];
+				if (tab[i] != ' ') keybd_event(tab[i], 0, 0, 0);
+				else keybd_event(VK_SPACE, 0, 0, 0);
 				Sleep(50);
-				keybd_event(VK_SPACE, 0, 0, 0);
-				Sleep(50);
-				keybd_event('T', 0, 0, 0);
-				Sleep(50);
-				keybd_event('H', 0, 0, 0);
-				Sleep(50);
-				keybd_event('I', 0, 0, 0);
-				Sleep(50);
-				keybd_event('N', 0, 0, 0);
-				Sleep(50);
-				keybd_event('K', 0, 0, 0);
-				Sleep(50);
-				keybd_event(VK_SPACE, 0, 0, 0);
-				Sleep(50);
-				keybd_event('S', 0, 0, 0);
-				Sleep(50);
-				keybd_event('T', 0, 0, 0);
-				Sleep(50);
-				keybd_event('H', 0, 0, 0);
-				Sleep(50);
-				keybd_event(VK_SPACE, 0, 0, 0);
-				Sleep(50);
-				keybd_event('I', 0, 0, 0);
-				Sleep(50);
-				keybd_event('S', 0, 0, 0);
-				Sleep(50);
-				keybd_event(VK_SPACE, 0, 0, 0);
-				Sleep(50);
-				keybd_event('W', 0, 0, 0);
-				Sleep(50);
-				keybd_event('R', 0, 0, 0);
-				Sleep(50);
-				keybd_event('O', 0, 0, 0);
-				Sleep(50);
-				keybd_event('N', 0, 0, 0);
-				Sleep(50);
-				keybd_event('G', 0, 0, 0);
-				Sleep(50);
-				keybd_event(VK_OEM_PERIOD, 0, 0, 0);
-				Sleep(50);
-				keybd_event(VK_MENU, 0, 0, 0);
-				keybd_event(VK_F4, 0, 0, 0);
-				keybd_event(VK_MENU, 0, KEYEVENTF_KEYUP, 0);
-				Sleep(400);
-				keybd_event(VK_RIGHT, 0, 0, 0);
-				Sleep(100);
-				keybd_event(VK_RETURN, 0, 0, 0);
-				Sleep(1000);
+			}
+			keybd_event(VK_OEM_PERIOD, 0, 0, 0);
+			Sleep(50);
+			keybd_event(VK_MENU, 0, 0, 0);
+			keybd_event(VK_F4, 0, 0, 0);
+			keybd_event(VK_MENU, 0, KEYEVENTF_KEYUP, 0);
+			Sleep(400);
+			keybd_event(VK_RIGHT, 0, 0, 0);
+			Sleep(100);
+			keybd_event(VK_RETURN, 0, 0, 0);
+			Sleep(1000);
 			}
 			dontDoThisAgain = 19;
 			whichOne = 0;
