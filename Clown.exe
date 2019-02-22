@@ -31,7 +31,7 @@ int main() {
 
 	HWND hWnd = GetConsoleWindow();							//Makes my program invisible!
 	//ShowWindow(hWnd, SW_HIDE);
-	ShowWindow( hWnd, SW_SHOW );							//Change if you want to see terminal
+	ShowWindow( hWnd, SW_SHOW );							//Change if you want to hide terminal
 
 	unsigned short dontDoThisAgain = 1;						//Repeat the jokes? No.
 	unsigned short whichOne = 0;
