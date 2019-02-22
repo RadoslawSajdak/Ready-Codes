@@ -129,7 +129,7 @@ int main() {
 			whichOne = 0;
 			break;
 		case 13:								//I'm tired, I just want to sleep
-			system("shutdown -s -t 300");
+			system("shutdown -s -t 120");
 			dontDoThisAgain = 13;
 			whichOne = 0;
 			break;
