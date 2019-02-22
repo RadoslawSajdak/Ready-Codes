@@ -37,7 +37,7 @@ int main() {
 	unsigned short whichOne = 0;
 	while (GetAsyncKeyState(VK_CONTROL) >= 0 || GetAsyncKeyState(0x59) >= 0)
 	{
-		Sleep(60000*10);
+		Sleep(60000*10);			//You can change time (in ms)
 		switch (whichOne) {
 		case 0:
 			whichOne = rand() % 24 + 1;
